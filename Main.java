@@ -74,6 +74,7 @@ public class Main {
         cat.showCatInfo(); // 显示猫信息
         cat.eat();         // 调用重写方法
         cat.meow();        // 猫独有行为
+
         cat.sleep();       // 调用父类方法
     }
 }
