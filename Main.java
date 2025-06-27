@@ -55,6 +55,11 @@ class Cat extends Animal {
         info(); // 调用父类的 info 方法
         System.out.println("Fur color: " + furColor);
     }
+
+    //添加
+    public void test() {
+        System.out.println("test");
+    }
 }
 
 // 测试类
@@ -74,7 +79,6 @@ public class Main {
         cat.showCatInfo(); // 显示猫信息
         cat.eat();         // 调用重写方法
         cat.meow();        // 猫独有行为
-
         cat.sleep();       // 调用父类方法
     }
 }
