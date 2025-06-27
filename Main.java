@@ -80,5 +80,7 @@ public class Main {
         cat.eat();         // 调用重写方法
         cat.meow();        // 猫独有行为
         cat.sleep();       // 调用父类方法
+
+        cat.test(); //fwb add 
     }
 }
