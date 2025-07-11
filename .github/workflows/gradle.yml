@@ -8,6 +8,18 @@
 name: Java CI with javac
 
 on:
+  workflow_dispatch:
+    inputs:
+      platforms:
+        description: 'Platform(s) to execute on (comma separated, e.g. "linux-x64")'
+        required: true
+        default: 'linux-x64'
+      configure-arguments:
+        description: 'Additional configure arguments'
+        required: false
+      make-arguments:
+        description: 'Additional make arguments'
+        required: false
   push:
     branches: [ "main" ]
   pull_request:
